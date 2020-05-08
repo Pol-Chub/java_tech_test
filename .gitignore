@@ -5,5 +5,5 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 # Ignore MacOS configuration file
-.DS-Style
-**/.DS_Style
+.DS_Store
+**/.DS_Store
