@@ -1,57 +1,65 @@
 <html>
-	<head>
-		<script type="text/javascript" src="script.js"></script>
-		<link rel="stylesheet" href="styles.css">
-	</head>
-	<body>
-		<div class="calculator">
-			<div class="showBoxDiv" id="showBox">			
-			</div>
-			<div class="numberBox">
-				<button class="number" id="zero" onclick="addToShowBox('0')">0</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="one" onclick="addToShowBox('1')">1</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="two" onclick="addToShowBox('2')">2</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="three" onclick="addToShowBox('3')">3</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="four" onclick="addToShowBox('4')">4</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="five" onclick="addToShowBox('5')">5</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="six" onclick="addToShowBox('6')">6</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="seven" onclick="addToShowBox('7')">7</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="eight" onclick="addToShowBox('8')">8</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="nine" onclick="addToShowBox('9')">9</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="add" onclick="addToShowBox('+')">+</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="subtract" onclick="addToShowBox('-')">-</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="multiply">*</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="divide">/</button>
-			</div>
-			<div class="numberBox">
-				<button class="number" id="evaluate" onclick="evaluateData()">=</button>
-			</div>
-		</div>
-	</body>
+<head>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="showBoxDiv" id="showBox"></div>
+        <div class="numberBox clear">
+            <button class="number" id="all-clear" onclick="clearDisplay()">AC</button>
+        </div>
+        <div class="numberBox one">
+            <button class="number" id="one" onclick="addToShowBox('1')">1</button>
+        </div>
+        <div class="numberBox two">
+            <button class="number" id="two" onclick="addToShowBox('2')">2</button>
+        </div>
+        <div class="numberBox three">
+            <button class="number" id="three" onclick="addToShowBox('3')">3</button>
+        </div>
+        <div class="numberBox four">
+            <button class="number" id="four" onclick="addToShowBox('4')">4</button>
+        </div>
+        <div class="numberBox five">
+            <button class="number" id="five" onclick="addToShowBox('5')">5</button>
+        </div>
+        <div class="numberBox six">
+            <button class="number" id="six" onclick="addToShowBox('6')">6</button>
+        </div>
+        <div class="numberBox seven">
+            <button class="number" id="seven" onclick="addToShowBox('7')">7</button>
+        </div>
+        <div class="numberBox eight">
+            <button class="number" id="eight" onclick="addToShowBox('8')">8</button>
+        </div>
+        <div class="numberBox nine">
+            <button class="number" id="nine" onclick="addToShowBox('9')">9</button>
+        </div>
+        <div class="numberBox dot">
+            <button class="number" id="dot" onclick="addToShowBox('.')">.</button>
+        </div>
+        <div class="numberBox zero">
+            <button class="number" id="zero" onclick="addToShowBox('0')">0</button>
+        </div>
+        <div class="numberBox delete">
+            <button class="number" id="delete" onclick="addToShowBox('')">DEL</button>
+        </div>
+        <div class="numberBox addition">
+            <button class="number" id="add" onclick="addToShowBox('+')">+</button>
+        </div>
+        <div class="numberBox subtraction">
+            <button class="number" id="subtract" onclick="addToShowBox('-')">-</button>
+        </div>
+        <div class="numberBox multiplication ">
+            <button class="number" id="multiply" onclick="addToShowBox('*')" >*</button>
+        </div>
+        <div class="numberBox division ">
+            <button class="number" id="divide" onclick="addToShowBox('/')" >/</button>
+        </div>
+        <div class="numberBox evaluation">
+            <button class="number" id="evaluate" onclick="evaluateData()">=</button>
+        </div>
+    </div>
+</body>
 </html>
